@@ -1,4 +1,4 @@
-package com.myList;
+package com.myList.sequentialLists;
 
 import javax.naming.SizeLimitExceededException;
 

@@ -1,4 +1,4 @@
-package com.myList;
+package com.myList.sequentialLists;
 
 public class SLList {
   public IntNode first;

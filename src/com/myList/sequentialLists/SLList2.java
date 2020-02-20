@@ -1,4 +1,4 @@
-package com.myList;
+package com.myList.sequentialLists;
 
 //put IntNode as inner Class
 public class SLList2 {
