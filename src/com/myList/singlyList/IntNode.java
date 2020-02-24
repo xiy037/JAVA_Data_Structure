@@ -1,4 +1,4 @@
-package com.myList.sequentialLists;
+package com.myList.singlyList;
 
 public class IntNode {
   private int item;

@@ -1,27 +1,17 @@
-package com.myList.sequentialLists;
+package com.myList.singlyList;
 
-//put IntNode as inner Class
-public class SLList2 {
-
-  private static class IntNode {
-    private int item;
-    public IntNode next;
-
-    public IntNode(int i, IntNode n) {
-      item = i;
-      next = n;
-    }
-
-    public int getItem() {
-      return item;
-    }
-  }
-
-
+/**
+ * SLList means Singly linked list.
+ * The problem for SLList here is, if you try to removeLast(), you have to iterate through the list to find the one Node before the last
+ * Node, and then point the `last IntNode` to that one.
+ * This will slow down the remove speed.
+ * The problem can be solved by double linked list.
+ */
+public class SLList {
   public IntNode first;
   public IntNode last;
 
-  public SLList2(int x) {
+  public SLList(int x) {
     first = new IntNode(x, null);
     last = first;
   }
@@ -37,16 +27,16 @@ public class SLList2 {
 
   //add a to the end of the list
   public void addLast(int a) {
-    last.next = new IntNode(a, null);
-    last = last.next;
+      last.next = new IntNode(a, null);
+      last = last.next;
   }
 
   public int getLast() {
-    return last.getItem();
+      return last.getItem();
   }
 
   public static void main(String[] args) {
-    SLList2 sL = new SLList2(6);
+    SLList sL = new SLList(6);
     sL.addFirst(5);
     sL.addFirst(4);
     System.out.println(sL.getFirst());
@@ -60,4 +50,3 @@ public class SLList2 {
     System.out.println(sL.getLast());
   }
 }
-

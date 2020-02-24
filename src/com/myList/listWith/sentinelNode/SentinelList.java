@@ -46,7 +46,7 @@ public class SentinelList<T> {
      while(p.next != null) {
        p = p.next;
      }
-     size++
+     size++;
     p.next = new Node(y, null);
   }
 
